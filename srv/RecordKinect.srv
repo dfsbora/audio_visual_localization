@@ -1,0 +1,9 @@
+# Request
+string audio_dir
+string frames_dir
+float32 recording_duration
+string timestamp
+int32 kinect_index
+---
+# Response
+bool success

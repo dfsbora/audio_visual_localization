@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- Include the Kinect Azure driver launch file -->
+    <include file="$(find azure_kinect_ros_driver)/launch/driver.launch"/>
+
+    <!-- Run the kinect recording server -->
+    <node name="record_kinect_server" pkg="audio_visual_localization" type="record_kinect_server.py" required="true" output="screen">
+        <!-- Add any necessary parameters here -->
+    </node>
+
+  </launch>
